@@ -1,0 +1,52 @@
+{
+  "id": "wibe-module",
+  "title": "Wibe Module",
+  "version": "0.0.3",
+  "authors": [
+    {
+      "name": "Slime",
+      "email": "ilyalekh94@gmail.com",
+      "discord": "pivnoibleba",
+      "flags": {}
+    },
+    {
+      "name": "ChatGPT",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "packs": [
+    {
+      "name": "VibeCompendium",
+      "label": "VibeCompendium",
+      "path": "packs/VibeCompendium",
+      "type": "Macro",
+      "system": "sotc",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "VibeItems",
+      "label": "VibeItems",
+      "path": "packs/VibeItems",
+      "type": "Item",
+      "system": "sotc",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "description": "<p>A simple module for SOTC that adds a compendium with macros that allow you to edit token statuses and states without opening the token sheet. There are also triggers that work as in the system, with the exception of Blaze, which requires you to select all targets who should receive the burn.</p>",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  }
+}
